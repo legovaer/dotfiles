@@ -1,0 +1,25 @@
+[user]
+	name = Levi Govaerts
+	email = {{ .email }}
+[alias]
+	co = checkout
+	st = status
+	pr="!f() { \
+	GIT_MESSAGE=$( git log -1 --pretty=format:%B | cat); \
+	BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD); \
+	     git push -u origin $BRANCH_NAME; \
+	     hub pull-request -m \"$GIT_MESSAGE\" -b main; \
+	};f "
+[push]
+	default = current
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[safe]
+	directory = *
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
