@@ -40,7 +40,7 @@ plugins=(git docker zsh-syntax-highlighting colorize pip python brew macos zsh-i
 [[ ! -f $ZSH/oh-my-zsh.sh ]] || source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.pyy10k.zsh ]] || source ~/.p10k.zsh
 
 # Load additional profile settings
 if [ -f ~/.bash_profile ]; then
@@ -61,3 +61,6 @@ bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode che
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+
+[[ ! -f ~/.config/zsh/config/aliases.zsh ]] || source ~/.config/zsh/config/aliases.zsh
