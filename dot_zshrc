@@ -63,4 +63,6 @@ bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode che
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 
 
-[[ ! -f ~/.config/zsh/config/aliases.zsh ]] || source ~/.config/zsh/config/aliases.zsh
+[[ ! -f ~/.config/zsh/config/alias.zsh ]] || source ~/.config/zsh/config/alias.zsh
+
+[[ ! -f ~/.config/zsh/config/hl-functions.zsh ]] || source ~/.config/zsh/config/hl-functions.zsh
