@@ -1,4 +1,4 @@
-alias aliases='chezmoi ~/.config/zsh/config/aliases.zsh ; reload ; echo "Aliases reloaded"'
+alias aliases='chezmoi edit ~/.config/zsh/config/alias.zsh ; chezmoi apply ; omz reload ; echo "Aliases reloaded"'
 
 alias cm='chezmoi'
 alias cm-commit='chezmoi git add --all && chezmoi git commit ; chezmoi git push'
@@ -11,3 +11,7 @@ alias dcl='docker compose logs -f'
 alias dcs='docker compose stop'
 alias dcp='docker compose pull'
 alias ld='lazydocker'
+alias charlotte='ssh charlotte'
+alias amelie='ssh amelie'
+alias amber='ssh amber'
+alias ct='pct-enter'

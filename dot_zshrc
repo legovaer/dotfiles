@@ -35,7 +35,7 @@ zstyle ':completion:*' list-suffixeszstyle ':completion:*' expand prefix suffix
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker zsh-syntax-highlighting colorize pip python brew macos zsh-interactive-cd waow wakatime fzf)
+plugins=(git docker zsh-syntax-highlighting colorize pip python zsh-interactive-cd fzf)
 
 [[ ! -f $ZSH/oh-my-zsh.sh ]] || source $ZSH/oh-my-zsh.sh
 
@@ -64,5 +64,5 @@ bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode che
 
 
 [[ ! -f ~/.config/zsh/config/alias.zsh ]] || source ~/.config/zsh/config/alias.zsh
-
+[[ ! -f ~/.config/zsh/config/functions.zsh ]] || source ~/.config/zsh/config/functions.zsh
 [[ ! -f ~/.config/zsh/config/hl-functions.zsh ]] || source ~/.config/zsh/config/hl-functions.zsh
