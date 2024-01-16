@@ -11,12 +11,9 @@ alias dcl='docker compose logs -f'
 alias dcs='docker compose stop'
 alias dcp='docker compose pull'
 alias ld='lazydocker'
-<<<<<<< Updated upstream
 alias charlotte='ssh charlotte'
 alias amelie='ssh amelie'
 alias amber='ssh amber'
 alias ct='pct-enter'
-=======
 
 alias gdl-insta="gallery-dl -C $HOME/.insta-cookies.txt -d $HOME/storage/downloads --no-metadata-json --dirname-pattern=dl --filename-pattern={profile}-{shortcode} --no-iphone"
->>>>>>> Stashed changes
