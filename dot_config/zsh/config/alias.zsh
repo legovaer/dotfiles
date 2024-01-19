@@ -5,6 +5,7 @@ alias cm-commit='chezmoi git add --all && chezmoi git commit ; chezmoi git push'
 alias cm-add='chezmoi add'
 
 alias d='docker'
+alias ld='lazydocker'
 alias dc='docker compose'
 alias dcu='docker compose up'
 alias dcl='docker compose logs -f'
