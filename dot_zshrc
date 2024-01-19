@@ -51,7 +51,7 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
 complete -C '/usr/local/bin/aws_completer' aws
 complete -C ~/.custom-scripts/awless-completion.sh awless
-export PATH="$HOME/.poetry/bin:$PATH:$HOME/bin:$HOME/,local/bin"
+export PATH="$HOME/.poetry/bin:$PATH:$HOME/bin:$HOME/.local/bin"
 
 # HSTR configuration - add this to ~/.zshrc
 alias hh=hstr                    # hh to be alias for hstr
